@@ -11,7 +11,7 @@ export default function Notifications() {
 
   const { account, chainId } = useWeb3React()
 
-  const UNISWAP_CHANNEL_ADDRESS = '0x1f9840a85d5af5bf1d1762f925bdaddc4201f984' // Uniswap V3 channel address
+  const UNISWAP_CHANNEL_ADDRESS = '0x23606a710F8e73a350611dFD4e9bDC7aD2cEA79C' // Uniswap V3 channel address
 
   useEffect(() => {
     if (account) {
