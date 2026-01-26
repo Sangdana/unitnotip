@@ -11,12 +11,12 @@ export default function Notifications() {
 
   const { account, chainId } = useWeb3React()
 
-  const UNISWAP_CHANNEL_ADDRESS = '0x23606a710F8e73a350611dFD4e9bDC7aD2cEA79C' // Uniswap V3 channel address
+  const UNISWAP_CHANNEL_ADDRESS = '0x2D815240A61731c75Fa01b2793E1D3eD09F289d0' // Uniswap V3 channel address
 
   useEffect(() => {
     if (account) {
       const sdkSocket = createSocketConnection({
-        user: `eip155:1:0x2D815240A61731c75Fa01b2793E1D3eD09F289d0`, // user address in CAIP
+        user: `eip155:1:0x22c1f6050e56d2876009903609a2cc3fef83b415`, // user address in CAIP
         env: 'prod',
         socketOptions: { autoConnect: true },
       })
@@ -90,7 +90,7 @@ export default function Notifications() {
   const getNotifications = async () => {
     PushAPI.user
       .getFeeds({
-        user: `eip155:137:0x2D815240A61731c75Fa01b2793E1D3eD09F289d0`, // user address in CAIP
+        user: `eip155:137:0xd251b1A05AaB5cFB8bE44C827C8f2B086D48bE28`, // user address in CAIP
         env: 'prod',
         page: 1,
         limit: 10,
